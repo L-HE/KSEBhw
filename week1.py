@@ -1,10 +1,11 @@
-# Baekjoon 10430 나머지
+# Baekjoon 10869 사칙연산
 
-A, B, C = map(int, input().split())
+import sys
 
-ans1 = (A + B) % C
-ans2 = ((A % C) + (B % C)) % C
-ans3 = (A * B) % C
-ans4 = ((A % C) * (B % C)) % C
+A, B = map(int, sys.stdin.readline().split())
 
-print(f"{ans1}\n{ans2}\n{ans3}\n{ans4}\n")
+print(A + B)
+print(A - B)
+print(A * B)
+print(int(A / B))
+print(A % B)
